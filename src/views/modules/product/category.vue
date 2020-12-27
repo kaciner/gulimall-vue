@@ -6,8 +6,8 @@
       active-text="开启拖拽"
       inactive-text="关闭拖拽">
     </el-switch>
-    <el-button @click="batchSave" v-if="draggable" style="margin: 0px 0px 10px 5px" size="mini">批量保存</el-button>
-    <el-button type="danger" @click="batchDelete" style="margin: 0px 0px 10px 5px" size="mini">批量删除</el-button>
+    <el-button @click="batchSave" v-if="draggable" style="margin: 0px 0px 10px 5px">批量保存</el-button>
+    <el-button type="danger" @click="batchDelete" style="margin: 0px 0px 10px 5px">批量删除</el-button>
     <el-tree :data="menus" :props="defaultProps" :expand-on-click-node="false"
              show-checkbox node-key="catId" :default-expanded-keys="expandedKey" :draggable="draggable"
              :allow-drop="allowDrop" @node-drop="handleDrop" ref="menuTree">
