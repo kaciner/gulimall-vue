@@ -51,6 +51,7 @@ import {
   Alert,
   Slider,
   Icon,
+  Image,
   Row,
   Col,
   Upload,
@@ -120,6 +121,7 @@ Vue.use(Tree)
 Vue.use(Alert)
 Vue.use(Slider)
 Vue.use(Icon)
+Vue.use(Image)
 Vue.use(Row)
 Vue.use(Col)
 Vue.use(Upload)
