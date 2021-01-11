@@ -40,7 +40,6 @@
           <el-table-column prop="icon" header-align="center" align="center" label="组图标"></el-table-column>
           <el-table-column prop="catelogId" header-align="center" align="center" label="所属分类id"></el-table-column>
           <el-table-column
-            fixed="right"
             header-align="center"
             align="center"
             width="150"
@@ -143,7 +142,7 @@ export default {
         })
       }).then(({ data }) => {
         if (data && data.code === 0) {
-          this.dataList = data.page.list;
+          this.dataList = data.page .list;
           this.totalPage = data.page.totalCount;
         } else {
           this.dataList = [];
@@ -213,5 +212,5 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style>
 </style>
